@@ -45,8 +45,14 @@
         <!-- HOME -->
         <section class="home bd-grid" id="home">
              <div class="home__data">
-                 <h1 class="home__title">Hi, <br>I'am <span class="home__title-color">Maximiliano</span> <br> Front End Developer. </h1>
+                  <h1 class="home__title">
+                    <span class="typed"></span>
+                  </h1>
+                  <div  id="cadenas-texto">
+                    <h1 class="home__title"> Hi, <br>I'am <span class="home__title-color">Maximiliano</span> <br> Front End Developer.</h1>
+                  </div>  
                  <a href="#contact" class="button">Contact</a>
+                 <a href="#contact" class="button">Download CV</a>
              </div>
 
              <div class="home__social">
@@ -150,6 +156,7 @@
             <img class="skills__img" src="./assets/img/skills.jpg" alt="">
         </div>
     </div>
+    
 </section>
 
 
@@ -183,10 +190,10 @@
 <section class="contact section" id="contact">
     <h2 class="section-title">Contact</h2>
     <div class="contact__container bd-grid">
-        <form class="contact__form"  action="enviar.php" method="post">
-            <input type="text" name="name" placeholder="Name" class="contact__input" required>
-            <input type="email" name="email" placeholder="Email" class="contact__input" required>
-            <textarea name="message" cols="0" rows="10" class="contact__input contact__textarea" required></textarea>
+        <form class="contact__form"  action="EnviarCorreo.php" method="POST">
+            <input type="text" name="inputName" placeholder="Name" class="contact__input" required>
+            <input type="email" name="inputEmail"  placeholder="Email" class="contact__input" required>
+            <textarea name="Comentario" cols="0" rows="10" class="contact__input contact__textarea" required></textarea>
 
             <button type="submit" value="Enviar" class="contact__button button"> Enviar </button>
         </form>
@@ -207,10 +214,12 @@
     <p>&#169; 2021 copyright all right reserved</p>
 </footer>
 
+
+<!-- TYPED -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <!-- SCROLL REVEAL -->
 <script src="https://unpkg.com/scrollreveal"></script>
-
-
 
 <!-- MAIN JS -->
     <script src="assets/js/main.js" defer async></script>

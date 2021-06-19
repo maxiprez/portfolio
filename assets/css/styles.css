@@ -349,6 +349,7 @@ background-color: var(--first-color);
   }
   .skills__img{
     border-radius: .5rem;
+   
   }
 
   /* ===== WORK =====*/
@@ -492,6 +493,7 @@ background-color: var(--first-color);
     .contact__container{
       justify-items: center;
     }
+   
   }
   
   @media screen and (min-width: 1024px){
@@ -502,5 +504,9 @@ background-color: var(--first-color);
     .home__img{
       right: 10%;
     }
+    .skills__img{
+        border-radius: .5rem;
+       margin-left: 15rem !important;
+      }
   }
   
