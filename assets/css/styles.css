@@ -226,7 +226,7 @@ background-color: var(--first-color);
   .home__social-icon{
     width: max-content;
     margin-bottom: var(--mb-2);
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--second-color);
   }
   .home__social-icon:hover{
@@ -390,12 +390,12 @@ background-color: var(--first-color);
     cursor: pointer;
     margin-left: auto;
   }
-  .contact__textarea{
+  /* .contact__textarea{
       min-width: 360px;
       max-width: 360px;
       min-height: 100px;
       max-height: 200px;
-  }
+  } */
   
 /* ===== FOOTER =====*/
 .footer{
