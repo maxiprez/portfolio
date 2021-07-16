@@ -75,15 +75,20 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+//*===== CAMBIO DE IDIOMA =====*//
 let check = document.querySelector('.check');
 
 check.addEventListener('click', lenguage);
 
+
 function lenguage (){
     let id=check.checked;
-        if(id == true){
-            location.href="es/index.html";
-        }else{
-            location.href="../index.html";
-        }
+         if(id === true){
+             location.href="es/index.html";
+         }else{
+             location.href="../index.html";
+         }
 }
+
+
+

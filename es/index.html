@@ -9,6 +9,8 @@
         <meta name="description" content="Desarrollo de sitios webs a medida utilizando las mejores herramientas.">
         <!-- KEYWORDS -->
         <meta name="keywords"  content="FRONTEND, CSS, JS, DESARROLLADOR, HTML, REACT, DESARROLLO WEB, PAGINAS WEB, MAXIMILIANO, PREZ, MAXIMILIANO PREZ">
+        <!-- CSS BOOTSTRAP -->      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- CSS LOCAL -->
         <link rel="stylesheet" href="../assets/css/styles.css">
         <!-- FONT AWESOME -->
@@ -18,7 +20,9 @@
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    
+        <!-- FAVICON -->
+        <link rel="icon" href="../assets/img/favicon.ico">
+
         <title>Maximiliano Prez</title>
     </head>
 </head>
@@ -73,8 +77,8 @@
                         <a href="https://github.com/maxiprez/" class="home__social-icon" target="_blank" rel="noopener" rel="noreferrer"><i class='bx bxl-github' ></i></a>
                     </div>
 
-                    <div class="home__img">
-                        <img src="../assets/img/foto de perfil.jpg" alt="">
+                    <div>
+                        <img class="home__img" src="../assets/img/profile-picture.png" alt="">
                     </div>
                 </section>
 
@@ -83,11 +87,11 @@
             <h2 class="section-title">Sobre mi</h2>
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="../assets/img/foto de perfil.jpg" alt="">
+                    <img src="../assets/img/29110.jpg" alt="img">
                 </div>
                 <div>
                     <h2 class="about__subtitle">Soy Maximiliano</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, illum eaque! Quibusdam quam dolor suscipit temporibus molestiae quidem. Assumenda qui hic sint sunt illo ratione deleniti autem quia eveniet quae.</p>
+                    <p class="about__text">desarrollador frontend Jr. Actualmente trabajo como freelance. Comencé mi carrera como desarrollador frontend en el año 2020 y poco a poco con el tiempo he tomado un rol de desarrollador frontend más técnico basado en la web. trabajo en detalles que muchos desarrolladores frontend tienden a pasar por alto. Ser un desarrollador frontend híbrido y técnico con conocimientos en contenidos digitales me permite desempeñar dos roles simultáneamente, lo que en la economía actual puede ser muy beneficioso para cualquier empresa. Haber estudiado en Coder house y haber realizado proyectos reales me ha dado una gran cantidad de conocimientos y un conjunto de habilidades diversas para poder abordar cualquier proyecto de desarrollo que se me presente.</p>
                 </div>
             </div>
         </section>
@@ -98,7 +102,7 @@
             <h2 class="section-title">Habilidades</h2>
             <div class="skills__container bd-grid">
                 <h2 class="skills__subtitle">Habilidades Profesionales</h2>
-                <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem eum omnis voluptas at, ratione vel pariatur laboriosam voluptate amet error architecto ullam minima fuga repudiandae unde consequatur exercitationem dolor.</p>
+                <p class="skills__text">Aquí debajo se detallan brevemente  las tecnologías  y los conocimientos que adquirí hasta el día de la fecha. Siempre dispuesto a aprender nuevas tecnologías para mantenerme al día.</p>
 
                 <div class="skills__data">
                     <div class="skills__names">
@@ -192,9 +196,6 @@
                 <div class="work__img">
                     <a href="https://maxiprez.github.io/sitioWebLegends2/" target="_blank" rel="noopener" rel="noreferrer"><img src="../assets/img/work5.png" alt=""></a>  
                 </div>
-                <div class="work__img">
-                    <img src="../assets/img/work1.png" alt="">
-                </div>
             </div>
         </section>
 
@@ -203,10 +204,10 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contacto</h2>
             <div class="contact__container bd-grid">
-                <form class="contact__form"  action="EnviarCorreo.php" method="POST">
-                    <input type="text" name="inputName" placeholder="Nombre" class="contact__input" required>
-                    <input type="email" name="inputEmail"  placeholder="Email" class="contact__input" required>
-                    <textarea name="Comentario" cols="0" rows="10" class="contact__input contact__textarea" required></textarea>
+                <form class="contact__form"  action="../correo.php" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Nombre" class="contact__input" required>
+                    <input type="email" name="email" id="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="mensaje" id="mensaje" cols="0" rows="10" class="contact__input contact__textarea" required></textarea>
 
                     <button type="submit" value="Enviar" class="contact__button button"> Enviar </button>
                 </form>
@@ -231,6 +232,10 @@
 
 <!-- SCROLL REVEAL -->
 <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 <!-- MAIN JS -->
     <script src="../assets/js/main.js" defer async></script>

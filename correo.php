@@ -8,7 +8,7 @@
   $header = 'Enviado desde mi portfolio';
   $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
 
-  mail($destinatario, $mensaje, $header);
+  mail($destinatario, $mensajeCompleto, $header, $email);
   echo "<script>alert('Correo enviado exitosamente')</script>";
   echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
 ?>
