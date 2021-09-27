@@ -78,35 +78,36 @@ const typed = new Typed('.typed', {
 //*===== CAMBIO DE IDIOMA =====*//
 let check = document.querySelector('.check');
 
-check.addEventListener('click', window.onload);
+check.addEventListener('click', lenguage);
 
 
 
-//  function lenguage (){  
-//         let id=check.checked;
-//          if(id === true){
-//               location.href='../es/index.html';
-//          }else{
-//              location.href='../index.html';
-//           }
-//      }
+  function lenguage (){  
+         let id=check.checked;
+          if(id === true){
+               location.href='../es/index.html';
+          }else{
+              location.href='../index.html';
+           }
+      }
 
 
 
 
-     window.onload = function () {
+    //  window.onload = function () {
 
-        var ln = navigator.language || navigator.userLanguage;
-        /*Validar que no se encuentre en la pagina correspondiente a su idioma*/
-        let pagActual = window.location.pathname;
+    //     var ln = navigator.language || navigator.userLanguage;
+    //     /*Validar que no se encuentre en la pagina correspondiente a su idioma*/
+    //     let pagActual = window.location.pathname;
         
         
-        if (ln == 'en-EN' && !pagActual.includes("index")) {
-            window.location.href = '../index.html';  
-        } else if (ln == 'es-ES' && !pagActual.includes("index")) {
-            window.location.href = '../es/index.html';
-        } else{
-          console.log("Otro idioma");
-        }
+    //     if (ln == 'en-EN' && !pagActual.includes("index")) {
+    //         window.location.href = '../index.html';  
+    //     } else if (ln == 'es-ES' && !pagActual.includes("index")) {
+    //         window.location.href = '../es/index.html';
+    //     } else{
+    //       console.log("Otro idioma");
+    //     }
      
-     }
+    //  }
+     
